@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang ="en">
+	
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script defer src = "js/script.js"></script>
+	</head>
+	
+	<body>
+		<div class="board">
+			<h2 id="game-message">Tic Tac Toe</h2>
+			<div class="playAgain">
+			<button onclick="startGame();" class="" id="startAgain">Play Again</button>
+			</div>
+			<div class="show" id="userForm">
+				<form>
+					<p>Please enter the players' names:</p><br/>
+					<label for="playerOne">Player 1</label>
+					<input type="text" id="playerOne" name="playerOne"/><br/><br/>
+					<label for="playerTwo">Player 2</label>
+					<input type="text" id="playerTwo" name="playerTwo"/><br/><br/>
+					<input class="button" type="reset" value="Clear"/>
+					<input class="button" type="button" value="Submit" onclick="startGame()"/>
+				</form>
+			</div>
+			<div id="game-board">
+			</div>
+		</div>
+		<div id="score-board" class="">
+		</div>
+	</body>
+</html>
